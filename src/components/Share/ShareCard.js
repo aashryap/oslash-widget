@@ -27,7 +27,6 @@ function ShareCard({}) {
     const options = _userToDropdown(allUsers);
     
     const handleInvite = () => {
-        console.log("Call Invite Api");
         let temp = [];
         for (let i=0;i<selectedUsers.length;i++) {
             for (let j=0;j<allUsers.length;j++) {
@@ -36,13 +35,11 @@ function ShareCard({}) {
                 }
             }
         }
-        console.log("TEMp ", temp);
         setSharedUsers([...sharedUsers, ...temp]);
         setSelectedUsers([]);
     }
 
     const onUserSelect = (data = []) => {
-        console.log("Selected Users", data);
         setSelectedUsers(data);
     }
 

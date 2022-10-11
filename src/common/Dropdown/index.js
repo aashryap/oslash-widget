@@ -44,7 +44,6 @@ const Dropdown = ({
     const searchRef = useRef();
 
     useEffect(() => {
-      console.log("ashdkjashdkjhsakjdhaskjd ", value)
       setSelectedValue(isMulti ? (value || []) : (value || null));
     }, [value])
 
@@ -86,7 +85,6 @@ const Dropdown = ({
           group['others'].push(options[i])
         }
       }
-      console.log({group})
       return options;
     }
 

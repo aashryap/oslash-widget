@@ -5,13 +5,8 @@ import SharedMember from './SharedMember';
 
 function SharedMembers() {
     const {sharedUsers, setSharedUsers, allUsers, setAllUsers} = useShareContext();
-    
-    useEffect(() => {
-        console.log("all users ", allUsers);
-    }, [allUsers]) 
 
     const onPermissionChange = (val, userId) => {
-        console.log(val, userId);
         // call update permission API
         let sharedUserTemp = [];
         sharedUserTemp = sharedUsers.map((su) => {
@@ -19,8 +14,7 @@ function SharedMembers() {
                 su.permission = val.value;
             }  
             return su;
-        })  
-        console.log("=======", sharedUserTemp);
+        })
         setSharedUsers(sharedUserTemp);
         let allUsersTemp = [];
         allUsersTemp = allUsers.map((user) => {
