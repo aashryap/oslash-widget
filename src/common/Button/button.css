@@ -1,0 +1,18 @@
+.button {
+    min-width: 70px; 
+    min-height: 30px; 
+    border-radius: 4px;
+    border: none
+}
+
+.primary {
+    background-color: #24a0ed;
+    color: black;
+}
+
+.button-with-icon {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

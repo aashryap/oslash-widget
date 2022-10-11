@@ -1,0 +1,29 @@
+.card {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #F9FAFB;
+    /* overflow: hidden; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+ 
+ .card-header {
+   background: #F9FAFB;
+   padding: 8px 12px;
+   border-radius: 8px 8px 0 0;
+ }
+ 
+ .card-footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   /* width: 100%; */
+   background-color: #F9FAFB;
+   padding: 8px 12px;
+   border-radius: 0 0 8px 8px;
+ }
+ 
+ .card-main {
+   padding: 8px 12px;
+ }
